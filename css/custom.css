@@ -86,8 +86,24 @@ body {
   max-height: 500px;
 }
 
-#CoDec { 
+#coDec { 
   font-size: initial;
-  background-color:wheat;
+  background-color: black;
+  color: whitesmoke;
   text-align: center;
+  border: 5px;
+  border-radius: 8%;
+}
+
+#coDec1 { 
+  font-size: initial;
+  background-color:rgb(209 142 71);
+  text-align: center;
+}
+
+#coDec2 { 
+  font-size: initial;
+  background-color:rgb(185 157 129);
+  text-align: center;
+  
 }
