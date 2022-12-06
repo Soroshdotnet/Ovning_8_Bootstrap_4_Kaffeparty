@@ -62,13 +62,18 @@ body {
 #product {
   background-color: white;
   border: 5px;
-  border-style: ridge;
+  border-radius: 8%;
+  border-color: white;
+  margin: 1%;
+  width: 23%;
   
 }
+
 #pris {
   color: red;
   font-style: italic;
   background-color: antiquewhite;
+  font-weight: 500;
 }
 
 #pImage {
