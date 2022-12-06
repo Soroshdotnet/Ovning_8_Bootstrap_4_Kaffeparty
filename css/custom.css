@@ -74,15 +74,15 @@ body {
 #pImage {
   width: 150px;
   height: 150px;
-  align-self: center;
 }
 
 #Pbanners { 
   width: 350px;
   max-height: 500px;
-  align-self: center;
 }
 
 #CoDec { 
   font-size: initial;
+  background-color:wheat;
+  text-align: center;
 }
