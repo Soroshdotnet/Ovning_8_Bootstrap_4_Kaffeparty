@@ -59,13 +59,25 @@ body {
     -webkit-overflow-scrolling: touch;
   }
 
+/* PRODUKTER */
+
+#produktlista
+{
+  margin-top: 2rem;
+  background-color: rgb(217 180 142);
+  border: 5px;
+  border-radius: 5%;
+  border-color: white;
+  text-align: center;
+  
+}
+
 #product {
   background-color: white;
-  border: 5px;
-  border-radius: 8%;
   border-color: white;
   margin: 1%;
-  width: 23%;
+  width: auto;
+  border-radius: 8px;
   
 }
 
