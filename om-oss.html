@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Övning 8: Bootstrap 4 - Kaffeparty</title>
+    
+        <!-- Bootstrap CDN via jsDelivr @ https://getbootstrap.com/docs/5.2/getting-started/download/  -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
+        <!-- End Bootstrap CDN via jsDelivr  -->
+    
+        <!-- Background link to css file -->
+        <link rel="stylesheet" href="css\custom.css">
+    
+    
+        <div class="container">
+            <div class="row" class="header">
+    
+                <div class="col-sm-4" id="title">
+                    <h1 class="fw-bolder">Kaffeparty
+                        <small class="fw-normal fst-italic"> <br> Vi älskar kaffe!
+                        </small>
+                    </h1>
+                </div>
+    
+                <div class="col-sm-4" id="logo">
+                    <div id="logo">
+                        <img class="img-fluid" src="images\kaffeparty_coffeshop.jpg" alt="kaffeparty Logo" class="rounded">
+                    </div>
+                </div>
+    
+                <!-- <div class="col-sm-4" id="logo">
+                    <div id="topMenu">
+                    </div>
+                </div> -->
+            </div>
+    
+            <!-- START MENU -->
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Startsida</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="produkter.html">Produkter</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="om-oss.html">Om oss</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- END MENU -->
+        </div>
+    </head>
+
+<body>
+
+    <!-- Container layout innehåller 2 delar -->
+    <div class="container py-5">
+
+        <!-- <div class="row justify-content-center">
+            <div class="col-6 col-lg-4" id="kaffeMaskiner">
+                <h2>Kaffemaskiner</h2>
+                <div id="produkter">
+                    <h3>Produkter</h3>
+
+
+                </div>
+                <div id="produktInfo">
+                    <h3>Produktinformation</h3>
+
+                </div>
+
+
+                <div class="col-6 col-lg-4" id="kaffeParty">
+                    <h2>Kaffeparty</h2>
+                    <div id="privatPersoner">
+                        <h3>Privatpersoner</h3>
+
+                    </div>
+                    <div id="företag">
+                        <h3>Företag</h3>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <!-- Other customers also bought row:
+                <h3>Other customers also bought...</h3> -->
+
+        <h2>Om oss
+        </h2>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img class="img-fluid" src="images\banners\kaffeparty_hp_1.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img class="img-fluid" src="images\banners\kaffeparty_hp_2.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img class="img-fluid" src="images\banners\kaffeparty_hp_1.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img class="img-fluid" src="images\banners\kaffeparty_hp_2.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END CONTAINER KAFFEMASKINER OCH PRODUKTINFORMATION-->
+
+<!-- START FOOTER -->
+
+<div class="b-example-divider"></div>
+
+<div class="container">
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Startsida</a></li>
+            <li class="nav-item"><a href="produkter.html" class="nav-link px-2 text-muted">Produkter</a></li>
+            <li class="nav-item"><a href="om-oss.html" class="nav-link px-2 text-muted">Om oss</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Villkor</a></li>
+        </ul>
+        <p class="text-center text-muted">&copy; Övning 8: Bootstrap 4 - Kaffeparty - Copyright 2022. By Sorosh </p>
+    </footer>
+</div>
+<!-- END FOOTER -->
+
+    <!-- 
+
+
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-4">
+                    <div class="card box-shadow mx-auto my-5" style="width: 18rem;">
+                        <img src="https://nsm09.casimages.com/img/2021/06/26//21062602461725998217475200.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Anémone</h5>
+                            <hr>
+                            <p class="card-text">Some quick example</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                            <path fill="#ffffff" fill-opacity="1"
+                                d="M0,192L48,197.3C96,203,192,213,288,192C384,171,480,117,576,90.7C672,64,768,64,864,85.3C960,107,1056,149,1152,186.7C1248,224,1344,256,1392,272L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                            </path>
+                        </svg>
+                        <a href=""><i class="fas fa-disease"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card box-shadow my-5 mx-auto" style="width: 18rem;">
+                        <img src="https://nsm09.casimages.com/img/2021/06/26//21062602461725998217475199.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Tulipe</h5>
+                            <hr>
+                            <p class="card-text">Some quick example</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                            <path fill="#ffffff" fill-opacity="1"
+                                d="M0,64L48,53.3C96,43,192,21,288,58.7C384,96,480,192,576,218.7C672,245,768,203,864,154.7C960,107,1056,53,1152,32C1248,11,1344,21,1392,26.7L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                            </path>
+                        </svg>
+                        <a href=""><i class="fas fa-disease"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card box-shadow mx-auto my-5" style="width: 18rem;">
+                        <img src="https://nsm09.casimages.com/img/2021/06/26//21062602461725998217475198.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lycoris</h5>
+                            <hr>
+                            <p class="card-text">Some quick example</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                            <path fill="#ffffff" fill-opacity="1"
+                                d="M0,256L48,256C96,256,192,256,288,245.3C384,235,480,213,576,181.3C672,149,768,107,864,112C960,117,1056,171,1152,186.7C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                            </path>
+                        </svg>
+                        <a href=""><i class="fas fa-disease"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+         -->
+
+</body>
+
+</html>

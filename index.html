@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Övning 8: Bootstrap 4 - Kaffeparty</title>
+
+    <!-- Bootstrap CDN via jsDelivr @ https://getbootstrap.com/docs/5.2/getting-started/download/  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <!-- End Bootstrap CDN via jsDelivr  -->
+
+    <!-- Background link to css file -->
+    <link rel="stylesheet" href="css\custom.css">
+
+
+    <div class="container">
+        <div class="row" class="header">
+
+            <div class="col-sm-4" id="title">
+                <h1 class="fw-bolder">Kaffeparty
+                    <small class="fw-normal fst-italic"> <br> Vi älskar kaffe!
+                    </small>
+                </h1>
+            </div>
+
+            <div class="col-sm-4" id="logo">
+                <div id="logo">
+                    <img class="img-fluid" src="images\kaffeparty_coffeshop.jpg" alt="kaffeparty Logo" class="rounded">
+                </div>
+            </div>
+
+            <!-- <div class="col-sm-4" id="logo">
+                <div id="topMenu">
+                </div>
+            </div> -->
+        </div>
+
+        <!-- START MENU -->
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Startsida</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="produkter.html">Produkter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="om-oss.html">Om oss</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- END MENU -->
+    </div>
+</head>
+
+<!-- Vilka är vi? -->
+
+
+<body>
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="images\transparent.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
+                    width="700" height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+                <h2 class="display-5 fw-bold lh-1 mb-3">Vilka är vi?
+                    <small class="fw-normal fst-italic"> Vi är en rörelse
+                    </small>
+                </h2>
+
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Läs mer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="m-1">
+        <div class="container">
+            <div class="row" class="header">
+
+                <div class="col-sm-4" id="title">
+                    <h1 class="fw-bolder">Vilka vi är..
+                        <small class="fw-normal fst-italic">en rörelse
+                        </small>
+                    </h1>
+                </div>
+
+                <div class="col-sm-4" id="logo">
+                    <div id="logo">
+                        <img src="images\kaffeparty_hp_1.jpg" alt="kaffeparty Logo" class="rounded">
+                    </div>
+                </div>
+
+                <div class="col-sm-4" id="nav">
+                    <p>
+                        Läs mer om (ankarmeny):
+                        <br> Vilka vi är..
+                        <br> Vad vi gör..
+                        <br> Varför välja oss..
+                        <br> Kaffeparty, så fungerar det!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Vad gör vi? -->
+    <div class="b-example-divider"></div>
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-lg-6">
+                <h2 class="display-5 fw-bold lh-1 mb-3">Vad gör vi?
+                    <small class="fw-normal fst-italic"> Vi skapar energi
+                    </small>
+                </h2>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Läs mer</button>
+                </div>
+            </div>
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="images\lovecoffee.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
+                    height="500" loading="lazy">
+            </div>
+        </div>
+    </div>
+
+    <!-- Varför oss? -->
+    <div class="b-example-divider"></div>
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="images\transparent.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
+                    width="700" height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+                <h2 class="display-5 fw-bold lh-1 mb-3">Varför välja oss?
+                    <small class="fw-normal fst-italic"> Vi återvinner 100& koffein
+                    </small>
+                </h2>
+
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Läs mer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kaffeparty, så fungerar det! -->
+    <div class="b-example-divider"></div>
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-lg-6">
+                <h2 class="display-5 fw-bold lh-1 mb-3">Kaffeparty,
+                    <small class="fw-normal fst-italic"> så fungerar det!
+                    </small>
+                </h2>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Läs mer</button>
+                </div>
+            </div>
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="images\lovecoffee.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
+                    height="500" loading="lazy">
+            </div>
+        </div>
+    </div>
+
+<!-- START FOOTER -->
+
+    <div class="b-example-divider"></div>
+
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Startsida</a></li>
+                <li class="nav-item"><a href="produkter.html" class="nav-link px-2 text-muted">Produkter</a></li>
+                <li class="nav-item"><a href="om-oss.html" class="nav-link px-2 text-muted">Om oss</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Villkor</a></li>
+            </ul>
+            <p class="text-center text-muted">&copy; Övning 8: Bootstrap 4 - Kaffeparty - Copyright 2022. By Sorosh </p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
