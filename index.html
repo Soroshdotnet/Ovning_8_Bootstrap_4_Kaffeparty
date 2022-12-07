@@ -71,27 +71,70 @@
 </head>
 
 
-<!-- START breadcrumb -->
-<div class="container my-3">
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item active" aria-current="index.html">Startsida</li>
-        </ol>
-    </nav>
-</div>
-<!-- END breadcrumb -->
-
 
 
 <body>
-    <div class="container">
+    <main class="container" role="main">
+
+        <div id="welcomeCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Welcome 1"></button>
+                <button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="1"
+                    aria-label="Welcome 2"></button>
+                <button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="2"
+                    aria-label="Welcome 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item welcome-carousel-image1 active">
+                    <div class="carousel-caption">
+                        <h1>Välkommen till KaffeParty!</h1>
+                        <p>Världens bästa kaffebönor på internet.</p>
+                    </div>
+                </div>
+                <div class="carousel-item welcome-carousel-image2">
+                    <div class="carousel-caption text-start">
+                        <h1>Upptcäk våra kaffebönor.</h1>
+                        <p>Digitala kaffebönor levereras till din dörr varje månad.</p>
+                        <p><a class="btn btn-lg btn-primary" href="piesubscription.html" role="button">Köp nu</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item welcome-carousel-image3">
+                    <div class="carousel-caption text-end">
+                        <h1>Sök bland våra färska bönor.</h1>
+                        <p>Varje säsong har sin smak, upptäck våra vinterbönor.</p>
+                        <p><a class="btn btn-lg btn-primary" href="fruitpies.html" role="button">Upptäck mer</a></p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#welcomeCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Tillbaka</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#welcomeCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Nästa</span>
+            </button>
+        </div>
+
+        <!-- START breadcrumb -->
+        <div class="container my-3">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="index.html">Startsida</li>
+                </ol>
+            </nav>
+        </div>
+        <!-- END breadcrumb -->
 
 
-        
 
 
 
-        <div class="container"> <!-- Vilka är vi? -->
+
+
+        <div class="container">
+            <!-- Vilka är vi? -->
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
                 <div class="col-10 col-sm-8 col-lg-6">
                     <img src="images\transparent.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
@@ -117,9 +160,9 @@
             </div>
         </div>
 
-        
+
         <!-- Vad gör vi? -->
-        <div class="b-example-divider"></div> 
+        <div class="b-example-divider"></div>
         <div class="container">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
                 <div class="col-lg-6">
@@ -199,7 +242,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </main>
     <!-- START FOOTER -->
     <div class="b-example-divider"></div>
 
