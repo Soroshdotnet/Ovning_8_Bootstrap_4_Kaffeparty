@@ -1,0 +1,322 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Övning 8: Bootstrap 4 - Kaffeparty</title>
+
+    <!-- Bootstrap CDN via jsDelivr @ https://getbootstrap.com/docs/5.2/getting-started/download/  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <!-- End Bootstrap CDN via jsDelivr  -->
+
+    <!-- Background link to css file -->
+    <link rel="stylesheet" href="css\custom.css">
+
+
+    <div class="container">
+        <div class="row" class="header">
+
+            <div class="col-sm-4" id="title">
+                <h1 class="fw-bolder">Kaffeparty
+                    <small class="fw-normal fst-italic"> <br> Vi älskar kaffe!
+                    </small>
+                </h1>
+            </div>
+
+            <div class="col-sm-4" id="logo">
+                <div id="logo">
+                    <img class="img-fluid" src="images\kaffeparty_coffeshop.jpg" alt="kaffeparty Logo" class="rounded">
+                </div>
+            </div>
+
+            <!-- <div class="col-sm-4" id="logo">
+                <div id="topMenu">
+                </div>
+            </div> -->
+        </div>
+
+        <!-- START MENU -->
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Startsida</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="produkter.html">Produkter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="om-oss.html">Om oss</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- END MENU -->
+    </div>
+</head>
+
+
+
+<body class="bg-light">
+
+    <div class="container">
+        <main>
+            <div class="py-5 text-center">
+                <h2>Kassa</h2>
+                <p class="lead">Ange faktureringsuppgifter och avsluta ditt köp.</p>
+            </div>
+
+            <div class="row g-5">
+                <div class="col-md-5 col-lg-4 order-md-last">
+                    <h4 class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="text-primary">Varukorg</span>
+                        <span class="badge bg-primary rounded-pill">3</span>
+                    </h4>
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                            <div>
+                                <h6 class="my-0">En kaffemaskin</h6>
+                                <small class="text-muted">Model: X7895</small>
+                            </div>
+                            <span class="text-muted">7 841 SEK</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                            <div>
+                                <h6 class="my-0">Leveransavgift</h6>
+                                <small class="text-muted">Leverans och installation</small>
+                            </div>
+                            <span class="text-muted">955 SEK</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                            <div>
+                                <h6 class="my-0">Abonnemang</h6>
+                                <small class="text-muted">Påfyllning varje månad</small>
+                            </div>
+                            <span class="text-muted">8 SEK</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between bg-light">
+                            <div class="text-success">
+                                <h6 class="my-0">Rabattkod</h6>
+                                <small>KOD654</small>
+                            </div>
+                            <span class="text-success">−456 SEK</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>Totalt (SEK)</span>
+                            <strong>8 546 SEK</strong>
+                        </li>
+                    </ul>
+                    <!-- FORM START -->
+                    <form action=""></form>
+                    <form class="card p-2">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Ange rabattkod">
+                            <button type="submit" class="btn btn-secondary">OK</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-7 col-lg-8">
+                    <h4 class="mb-3">Faktura och leveransuppgifter</h4>
+                    <form class="needs-validation" class="needs-validation" action="done.html" method="get" novalidate>
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <label for="firstName" class="form-label">Förnamn</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    Giltigt förnamn måste anges.
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label for="lastName" class="form-label">Efternamn</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    Giltigt efternamn måste anges.
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="username" class="form-label">Användarnamn <span
+                                        class="text-muted">(Valfritt)</span></label>
+                                <div class="input-group has-validation">
+                                    <span class="input-group-text">@</span>
+                                    <input type="text" class="form-control" id="username" placeholder="Användarnamn">
+                                    <div class="invalid-feedback">
+                                        Korrekt användarnamn måste anges.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="dittnamn@example.com"
+                                    required>
+                                <div class="invalid-feedback">
+                                    Ange korrekt e-postadress
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="address" class="form-label">Adress</label>
+                                <input type="text" class="form-control" id="address" placeholder="Gatuadressen 123"
+                                    required>
+                                <div class="invalid-feedback">
+                                    Ange leveransadress.
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="address2" class="form-label">Adressrad 2 <span
+                                        class="text-muted">(Valfritt)</span></label>
+                                <input type="text" class="form-control" id="address2"
+                                    placeholder="T.ex. lägenhetsnummer eller rum">
+                            </div>
+
+                            <div class="col-md-5">
+                                <label for="country" class="form-label">Land</label>
+                                <select class="form-select" id="country" required>
+                                    <option value="">Välj...</option>
+                                    <option>Sverige</option>
+                                    <option>Finland</option>
+                                    <option>Norge</option>
+                                    <option>Danmark</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Välj ett giltigt land.
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label for="state" class="form-label">Stad</label>
+                                <select class="form-select" id="state" required>
+                                    <option value="">Välj...</option>
+                                    <option>Stockholm</option>
+                                    <option>Helsingfors</option>
+                                    <option>Oslo</option>
+                                    <option>Köpenhamn</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Välj ett giltigt land.
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label for="zip" class="form-label">Ort</label>
+                                <input type="text" class="form-control" id="zip" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    Ange ort.
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="same-address">
+                            <label class="form-check-label" for="same-address">Leveransadress är samma som
+                                fakturaadressen.</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="save-info">
+                            <label class="form-check-label" for="save-info">Spara informationen för nästa
+                                tillfälle.</label>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <h4 class="mb-3">Betalning</h4>
+
+                        <div class="my-3">
+                            <div class="form-check">
+                                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked
+                                    required>
+                                <label class="form-check-label" for="credit">Kort</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                                <label class="form-check-label" for="debit">Swish</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                                <label class="form-check-label" for="paypal">PayPal</label>
+                            </div>
+                        </div>
+
+                        <div class="row gy-3">
+                            <div class="col-md-6">
+                                <label for="cc-name" class="form-label">Namn på kort</label>
+                                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                                <small class="text-muted">Fullständigt namn som syns på kortet</small>
+                                <div class="invalid-feedback">
+                                    Namn måste anges
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="cc-number" class="form-label">Kortnummer</label>
+                                <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    Kortnummer måste anges
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label for="cc-expiration" class="form-label">Utgår</label>
+                                <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    Utgångsdatum måste anges
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label for="cc-cvv" class="form-label">CVV</label>
+                                <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    Säkerhetskod måste anges
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <button class="w-100 btn btn-primary btn-lg" type="submit">Fortsätt till betalning</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <!-- START FOOTER -->
+
+        <div class="container">
+            <footer class="py-3 my-4">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Startsida</a></li>
+                    <li class="nav-item"><a href="produkter.html" class="nav-link px-2 text-muted">Produkter</a></li>
+                    <li class="nav-item"><a href="om-oss.html" class="nav-link px-2 text-muted">Om oss</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Villkor</a></li>
+                </ul>
+                <p class="text-center text-muted"> <a href="Övning 8_ Bootstrap 5 - Kaffeparty .pdf"> &copy; Övning 8:
+                        Bootstrap 4 - Kaffeparty - Copyright 2022. By Sorosh </p></a>
+            </footer>
+        </div>
+        <!-- END FOOTER -->
+    </div>
+
+
+    <script src="js/form-validation.js"></script>
+
+</body>
+
+</html>
